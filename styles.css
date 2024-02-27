@@ -1,0 +1,415 @@
+
+* {
+    font-style: normal;
+}
+body {
+    margin: 0 0;
+    background: url("./images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-logo {
+    width: 9vw;
+    height: 5vh;
+    padding-left: 15px;
+    padding-top: 11px;
+}
+.nav-container {
+
+    display: flex;
+    position: fixed;
+    
+    gap: 65vw;
+    width: 100%;
+}
+.nav-container.sticking{
+    background: linear-gradient(
+    45deg,
+    rgb(26, 95, 155),
+    rgba(70, 171, 242, 0.91) 
+        );
+    background-blend-mode: normal;
+    width: 100%;
+
+    box-shadow: 0 5px 8px;
+}
+.nav-container h1 {
+    padding-left: 30px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+
+    list-style-type: none;
+}
+.nav-list li {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.nav-list li a:hover {
+    text-decoration: underline rgb(2, 4, 109);
+    color: white;
+
+}
+
+/* Style for home page */
+
+
+.home-cotainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;    
+}
+.home-info {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.home-info-text{
+    margin-right: 7vw;
+    margin-top: -8vh;
+}
+.home-info-img {
+    margin-left: 15vw;
+    display: flex;
+    margin-top: 20vh;
+    gap: 17px;
+    opacity: 0.7;
+}
+.img-one {
+    margin-top: 53px;
+}
+.img-one img {
+    border-radius: 0 0 0 8vh;
+}
+.img-two {
+    margin-top: 22px;
+}
+.img-three img {
+    border-radius: 0 7vh 0 0;
+}
+
+
+
+.home-info-second {
+    font-weight: 800;
+    color: bisque;
+    font-size: 49px;
+    margin-top: 34vh;
+    margin-bottom: 0px;
+
+    text-shadow: 2px 2px 10px #000000;
+}
+.home-info-second span {
+    color: #000000;
+    text-shadow: 2px 2px 4px #ffffff;
+    font-size: 55px;
+    
+}
+.home-second {
+    text-decoration: underline #000000;
+}
+.text {
+    text-transform: uppercase;
+    font-family: monospace;
+    color: #111;
+    font-variation-settings: "wght" var(--font-weight, 100);
+    font-size: 7rem;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.text-one, .text-two, .text-three{
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.home-info-third {
+    font-size: 21px;
+    width: 36vw;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* PERSONAL INFO STYLE */
+
+.personal {
+    text-align: center;
+}
+.personal-head {
+    font-size: 41px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.personal-text {
+    font-size: 21px;
+    margin: 0px 3vw;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.personal-text span {
+    text-decoration: underline;
+    font-weight: 500;
+    text-shadow: 4px 2px 3px #000000;
+    color: bisque;
+}
+
+.personal-about {
+    display: flex;
+    justify-content: space-between;
+
+}
+.personal-about-container{
+    width: 87vw;
+    background-color: rgb(37, 150, 190, 0.6);
+    border-radius: 46px;
+    margin: 12vh 47px;
+    padding: 3vh 0;
+}
+
+.personal-icons ul li {
+    list-style-type: none;
+}
+.personal-icons img{
+    width: 9vw;
+    height: 12vh;
+
+}
+
+/* CAROUSEL ICONS */
+
+.personal-icons {
+    padding-top: 8vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 130px 0;
+    overflow: hidden; 
+}
+
+.carousel-scene {
+    width: 87%;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+.carousel-list {
+    display: inline-block;
+    width: 7.5vw;
+    margin-right: 0px;
+    text-align: center;
+}
+
+.carousel-list img {
+    max-width: 100%;
+}
+
+.carousel-list p {
+    margin: 10px 0 0;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel-list {
+    animation: carousel 10s forwards infinite linear;
+}
+
+
+
+.personal-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 5vh 0;
+
+}
+
+.skills{
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 0 10px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 5vh;
+    white-space: nowrap;
+    margin: 10vh 0 0 32vw;
+}
+.skills h1 {
+    font-size: 1em;
+    margin-top: 3vh;
+}
+.blinking-cursor {
+    user-select: none;
+    animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink{
+    0% {
+        visibility: visible;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+
+/* personal list */
+
+.personal-one-html {
+    display: flex;
+    gap: 5vw;
+}
+.personal-two-css{
+    display: flex;
+    gap: 6.5vw;
+}
+.personal-three-js {
+    display: flex;
+    gap: 1.5vw;
+}
+.personal-four-php{
+    display: flex;
+    gap: 6.5vw;
+}
+.personal-five-react{
+    display: flex;
+    gap: 4.5vw;
+}
+.personal-six-laravel{
+    display: flex;
+    gap: 3vw;
+}
+.personal-container{
+    width: 100%;
+    height: 50%;
+    background-color: #ddd;
+
+    margin: 2vh 0;
+
+}
+.one-html {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+.two-css {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+.three-js {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+.four-php {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+.five-react {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+.six-laravel {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+.html {
+    width: 50%;
+    background-color: rgb(255, 71, 26);
+}
+.css {
+    width: 50%;
+    background-color: rgb(0, 0, 255);
+}
+.js {
+    width: 20%;
+    background-color: rgb(255, 204, 0);
+}
+.php {
+    width: 20%;
+    background-color: rgb(102, 0, 255);
+}
+.react {
+    width: 40%;
+    background-color: rgb(51, 204, 255);
+}
+.laravel {
+    width: 40%;
+    background-color: rgb(255, 26, 26);
+}
+.personal .one {
+    padding: 15px 0;
+    color: rgb(0, 0, 102);
+}
+
+.personal .two {
+    padding: 15px 0;
+    color: rgb(0, 0, 102);
+}
+.personal .three {
+    padding: 15px 0;
+    color: rgb(0, 0, 102);
+}
+.personal .four {
+    padding: 15px 0;
+    color: rgb(0, 0, 102);
+}
+.personal .five {
+    padding: 15px 0;
+    color: rgb(0, 0, 102);
+}
+.personal .six {
+    padding: 15px 0;
+    color: rgb(0, 0, 102);
+}
+
+/* personal about */
+.personal-about p {
+    text-align: center;
+}
+
+
+/* FOOTER STYLE */
+.footer-container {
+    background: linear-gradient(
+    45deg,
+    rgb(26, 95, 155) 12%,
+    rgba(70, 171, 242, 0.91) 84%
+        );
+    background-blend-mode: normal;
+    width: 100%;
+    height: 100%;
+}
+.footer-list {
+    padding: 3vh 0;
+    text-align: center;
+}
+.footer-list ul li{
+    list-style-type: none;
+}
