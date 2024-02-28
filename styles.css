@@ -17,10 +17,11 @@ body {
 .nav-container {
 
     display: flex;
+    justify-content: space-evenly;
     position: fixed;
     
-    gap: 65vw;
     width: 100%;
+    gap: 20vw;
 }
 .nav-container.sticking{
     background: linear-gradient(
@@ -56,6 +57,23 @@ body {
     text-decoration: underline rgb(2, 4, 109);
     color: white;
 
+}
+.nav-resume {
+    padding: 2vh 0;
+}
+.nav-resume a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    border: 1px solid rgb(2, 4, 109, 0.6);
+    background-color: rgb(236, 236, 236, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000000;
+}
+.nav-resume a:hover {
+    background-color: rgb(2, 4, 109, 0.5);
+    color: bisque;
 }
 
 /* Style for home page */
@@ -408,8 +426,27 @@ body {
 }
 .footer-list {
     padding: 3vh 0;
-    text-align: center;
-}
-.footer-list ul li{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     list-style-type: none;
+    }
+
+.footer-list li a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+
+
+    background-color: aquamarine;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    color: #000000;
+}
+.footer-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 81, 255);
 }
