@@ -104,3 +104,30 @@ customElements.define('type-async', TypeAsync, {
     extends: 'span'})
 
     init()
+
+
+// Resume text effect
+
+var myText = document.getElementById("bounceText").innerHTML, wrapText = "";
+
+for (var i = 0; i < myText.length; i++) {
+    wrapText += "<em>" + myText.charAt(i) + "</em>";
+}
+
+document.getElementById("bounceText").innerHTML = wrapText;
+
+var myLetters = document.getElementsByTagName("em"),
+    j = 0;
+
+    function applyBounce() {
+        setTimeout(function()  {
+            myLetters[j].className = "bounce-me";
+            j++;
+
+            if (j < myLetters.length) {
+                applyBounce();
+            }
+        }, 500);
+    }
+
+    applyBounce();
